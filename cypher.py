@@ -21,9 +21,6 @@ class Cipher(object):
       "mmm" mm#mm  ##m#"  #   #  "#mm"   #     "mmm#"  m"    m#mmmm     #  mm#mm
                    #
                    "'''
-
-    # "ПРИВЕТ МИР!": 0001111000000110000011110000010000001100000000110011100000011000000011110000011001001110
-
     def load_codes(self, f):
         self.codes = []
         with open(f, "r") as file:
