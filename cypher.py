@@ -58,7 +58,7 @@ class Cipher(object):
     def translate(self, msg):
         code: str = ""
         for char in msg:
-            code += self.translate_char(char)
+            code += self.translate_char(char.upper())
         return code
 
     def detranslate(self, msg):
