@@ -53,9 +53,9 @@ def main():
     while flag:
         inp0 = input("Шифровать или дешифровать(ш/д): ")
 
-        if inp0 == "Ш" or inp0 == "ш":
+        if inp0.upper() == "Ш":
             inp0 = True
-        elif inp0 == "Д" or inp0 == "д":
+        elif inp0.upper() == "Д":
             inp0 = False
         else:
             print("Ш или Д!")
@@ -65,7 +65,7 @@ def main():
         inp = input("Введите фразу для шифровки: ")
         code: str = ""
         for char in inp:
-            code += translate_char(char)
+            code += translate_char(char.upper())
         print(code)
     else:
         inp = input("Введите шифр для расшифровки: ")
